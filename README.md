@@ -74,7 +74,7 @@ pub enum DentalPatient {
     },
     
     Adult {
-        age: RangedU8<AGE_BOUNDARY, u8::MAX>,
+        age: RangedU8<AGE_BOUNDARY, { u8::MAX }>,
     }
 }
 ```
