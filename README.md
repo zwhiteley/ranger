@@ -1,7 +1,6 @@
-# Ranger
-
 <h1 style="text-align: center">
-    <img src="https://github.com/zwhiteley/ranger/blob/main/logo.png?raw=true" alt="logo">
+  Ranger
+  <img src="https://github.com/zwhiteley/ranger/blob/main/logo.png?raw=true" alt="logo">
 </h1>
 
 ## Summary
