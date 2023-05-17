@@ -1,0 +1,8 @@
+[package]
+name = "ranger"
+description = "A set of range-restricted types, traits, and macros"
+authors = ["Zachary Whiteley <z.n.whiteley@gmail.com>"]
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/zwhiteley/ranger"
+edition = "2021"
