@@ -203,6 +203,7 @@ _int_define!(RangedU16(u16));
 _int_define!(RangedU32(u32));
 _int_define!(RangedU64(u64));
 _int_define!(RangedU128(u128));
+_int_define!(RangedUsize(usize));
 
 // Signed ranged types
 _int_define!(RangedI8(i8));
@@ -210,6 +211,7 @@ _int_define!(RangedI16(i16));
 _int_define!(RangedI32(i32));
 _int_define!(RangedI64(i64));
 _int_define!(RangedI128(i128));
+_int_define!(RangedIsize(isize));
 
 #[cfg(test)]
 mod tests {
@@ -290,6 +292,7 @@ mod tests {
     _test_ranged!(ranged_u32, RangedU32(u32));
     _test_ranged!(ranged_u64, RangedU64(u64));
     _test_ranged!(ranged_u128, RangedU128(u128));
+    _test_ranged!(ranged_usize, RangedUsize(usize));
 
     // Signed tests
     _test_ranged!(ranged_i8, RangedI8(i8));
@@ -297,4 +300,5 @@ mod tests {
     _test_ranged!(ranged_i32, RangedI32(i32));
     _test_ranged!(ranged_i64, RangedI64(i64));
     _test_ranged!(ranged_i128, RangedI128(i128));
+    _test_ranged!(ranged_isize, RangedIsize(isize));
 }
