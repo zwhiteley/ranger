@@ -51,7 +51,7 @@ impl<IntType: Display> Display for RangedError<IntType> {
             TooLarge { value, maximum } =>
                 write!(f, "value provided, {value}, is greater than the maximum value, {maximum}, for the type"),
             InvalidRange { minimum, maximum } => write!(f,
-                "the minimum value, {minimum}, is greater than the maximum value, {maximum}"
+                                                        "the minimum value, {minimum}, is greater than the maximum value, {maximum}"
             ),
         }
     }
@@ -66,6 +66,8 @@ impl<IntType: Display> std::error::Error for RangedError<IntType> {}
 
 macro_rules! _int_define {
     ($name:tt($int_ty:ty)) => {
+        #[doc = concat!("A ranged [`", stringify!($int_ty), "`] type with a value between `MIN` \
+        and `MAX`")]
         #[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
         #[repr(transparent)]
         pub struct $name<const MIN: $int_ty, const MAX: $int_ty>($int_ty);
