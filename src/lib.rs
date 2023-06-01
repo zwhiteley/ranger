@@ -61,7 +61,7 @@
 //!
 //! struct LegalAdult {
 //!     pub name: String,
-//!     pub age: RangedU8<LEGAL_AGE, u8::MAX>,
+//!     pub age: RangedU8<LEGAL_AGE, { u8::MAX }>,
 //!
 //!     /* Additional public fields */
 //! }
